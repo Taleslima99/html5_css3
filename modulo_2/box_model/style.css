@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*padrão: box-level, mas posso mudar o display: block para display: inline; por exemplo*/
+h1 {
+    /*display:inline;*/
+    background-color: #22b287;
+    height: 300px;
+    width: 300px;
+
+    border-color: #195b9e;
+    border-width: 10px;
+    border-style: solid;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    outline-width: 5px;
+    outline-style: double;
+    outline-color: #da8920;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    /*margin: auto; centraliza a caixa*/
+
+    /*
+    shorthand
+    border: 10px solid #195b9e;
+
+    padding: 10px; todos são iguais
+
+    caso tenha apenas dois valores:
+    padding: 10px 20px; 10px é em cima e em baixo. 12px é na direita e esquerda
+
+    outline: 5px double #da8920;
+
+    margin: 20px 20px 40px 20px;
+
+    no margin, posso colocar auto nos lados:
+    20px auto 40px auto;
+    */
+}
+
+/*padrão: inline-level mas posso trocar para display: block ou até mesmo display: inline-block;*/
+a {
+    border-color: #fa8072;
+    border-style: solid;
+    border-width: 10px;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    /*
+    shorthand
+    border: 10px solid #fa8072;
+
+    padding: 10px;
+    */
+}
+
+/*
+TAMBÉM POSSO INVERTER. DE DISPLAY: INLINE PARA BLOCK OU OUTROS */

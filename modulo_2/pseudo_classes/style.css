@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div:hover {
+    color: #dc143c;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    background-color: #dc143c;
+    color: #fff;
+    font-weight: 600;
+    width: 300px;
+    padding: 3px;
+}

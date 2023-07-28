@@ -1,0 +1,67 @@
+/*
+em HTML é id = em CSS é # (SÓ USADO UMA VEZ EM UMA PÁGINA HTML, SE HOUVER MAIS NO DOCUMENTO É PERMITIDO).
+em HTML é class = em CSS é . (PODE SER USADO VÁRIAS VEZES NA MESMA PÁGINA HTML
+*/
+
+
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: #f3a712;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    background-color: #fdffff;
+    border-radius: 0.5px;
+    box-shadow: 0.5px 0.5px 1px #fdffff;
+}
+
+h1 {
+    text-align: center;
+    color: #29335c;
+    text-shadow: 0.5px 0.5px 1px;
+}
+
+h1#mainTitle {
+    font-size: 2.5em;
+    color: #29335c;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px;
+}
+
+.mainName {
+    background-color: #12a4f3;
+}
+
+h2 {
+    text-align: center;
+    color:#29335c;
+    text-shadow: 0.5px 0.5px 1px;
+}
+
+.basic {
+    color: #f312ef;
+}
+
+.intermediary {
+    color: #7b12f3;
+}
+
+.advanced{
+    color: #f31225;
+}
+
+p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+span {
+    font-weight: 700;
+}
