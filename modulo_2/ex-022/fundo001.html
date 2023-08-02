@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        div.square {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            border-radius: 2px;
+        }
+
+        div#square1 {
+            background-color: #2e8b57;
+        }
+
+        div#square2 {
+            background-image: linear-gradient(to top, #7c1313, #bc8828);
+        }
+
+        div#square3 {
+            background-image: url(imagens/pattern001.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="square" id="square1"></div>
+    <div class="square" id="square2"></div>
+    <div class="square" id="square3"></div>
+</body>
+</html>

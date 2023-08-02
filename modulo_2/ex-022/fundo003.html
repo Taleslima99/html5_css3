@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos fundos</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #1e2a31, #13232e);
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            text-shadow: -1px -1px 2px #00000090;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2:hover {
+            color: #8c8e96;
+            cursor: pointer;
+        }
+
+        div.container {
+            background-image: url(imagens/wallpaper003.jpg);
+            height: 200px;
+            border: none;
+            margin: 10px auto 50px auto;
+            width: 85%;
+        }
+
+        div#frame1 {
+            background-position: left top;
+        }
+
+        div.container#frame1 {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        div#frame2 {
+            background-position: left center;
+        }
+
+        div.container#frame2 {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        div#frame3 {
+            background-position: right bottom;
+        }
+
+        div.container#frame3 {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        div#frame4 {
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Left Top</h2>
+    <div class="container" id="frame1"></div>
+    <h2>Left Center</h2>
+    <div class="container" id="frame2"></div>
+    <h2>Right Bottom</h2>
+    <div class="container" id="frame3"></div>
+    <h2>Center Center</h2>
+    <div class="container" id="frame4"></div>
+</body>
+</html>
