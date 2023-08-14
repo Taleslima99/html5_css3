@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            margin-top: 10px;
+        }
+
+        div#scale {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Mais INPUTS</legend>
+            <div>
+                <label for="color">Selecione uma cor:</label>
+                <input type="color" 
+                name="color" 
+                id="color"
+                
+                value="#a65aa0">
+            </div>
+
+            <div id="scale">
+                <label for="scale">Nível de satisfação:</label>
+                <input type="range"
+                name="scale"
+                id="scale"
+                
+                min="0"
+                max="10"
+                value="7">
+            </div>
+
+            <div>
+                <label for="">Escolha uma foto:</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+
+                <input type="reset" value="Redefinir">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
