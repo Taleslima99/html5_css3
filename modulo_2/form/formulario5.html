@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: #2c2c87;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#container {
+            background-color: #fff;
+            padding: 10px;
+            width: 30%;
+            margin: auto;
+            border-radius: 2px;;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            padding: 5px;
+        }
+
+        fieldset {
+            border-radius: 2px;
+        }
+
+        div#button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" 
+                    name="name" 
+                    id="name" 
+                    
+                    autocomplete="name" 
+                    autofocus
+                    size="25"
+                    minlength="5" 
+                    maxlength="40">
+                </div>
+                <div>
+                    <label for="phone">Telefone:</label>
+                    <input type="phone" 
+                    name="phone" 
+                    id="phone"
+                    
+                    placeholder="(00) 00000-0000"
+                    pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                    required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <div>
+                    <input type="radio" 
+                    name="sex" 
+                    id="male" checked>
+                    <label for="male">Masculino</label>
+
+                    <input type="radio"
+                    name="sex"
+                    id="female">
+                    <label for="female">Feminino</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Esporte Favorito</legend>
+                <div>
+                    <input type="checkbox" name="football" id="football" checked>
+                    <label for="football">futebol</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="swimming" id="swimming">
+                    <label for="swimming">Natação</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="basketball" id="basketball">
+                    <label for="basketball">Basquete</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="volleyball" id="volleyball">
+                    <label for="volleyball">Vôlei</label>
+                </div>
+            </fieldset>
+            <div id="button">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Redefinir">
+            </div>
+        </form>
+    </div>        
+</body>
+</html>

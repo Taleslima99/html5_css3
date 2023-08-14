@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" 
+            name="name" 
+            id="name"
+            required 
+            minlength="2"
+            maxlength="15"
+            size="26"
+            placeholder="Digite seu primeiro nome">
+        </div>
+        <div>
+            <label for="surname">Sobrenome:</label>
+            <input type="text"
+            name="surname" 
+            id="surname"
+            required
+            minlength="2"
+            maxlength="30"
+            placeholder="Agora seu sobrenome">
+        </div>
+        <div>
+            <label for="user_password">Senha:</label>
+            <input type="password" 
+            name="password" 
+            id="user_password" 
+            required
+            minlength="8"
+            maxlength="15"
+            autocomplete="current-password"
+            placeholder="Por fim a senha">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

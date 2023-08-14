@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+
+        fieldset {
+            width: 23%;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text"
+                name="name"
+                id="name"
+                minlength="5"
+                maxlength="45"
+                autofocus
+                required>
+            </div>
+            <div>
+                <label for="age">Idade:</label>
+                <input type="number"
+                name="age"
+                id="age"
+                
+                value="18"
+                min="18"
+                max="90"
+                required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="mail" 
+                name="email" 
+                id="email"
+
+                autocomplete="email"
+                required>
+            </div>
+            <div>
+                <label for="tel">Telefone:</label>
+                <input type="tel"
+                name="tel"
+                id="tel"
+                
+                placeholder="(00) 00000-0000"
+                pattern="^\(\d{2})-\d{4,5}$"
+                required>
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Redefinir">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
