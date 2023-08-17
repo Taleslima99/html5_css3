@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com JS - II</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="idNumber">Número:</label>
+            <input type="range" name="number" id="idNumber" min="0" max="10"
+            oninput="currentNumber.innerHTML = Number(idNumber.value)">
+            <output id="currentNumber">5</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+        </div>
+    </form>
+
+</body>
+</html>

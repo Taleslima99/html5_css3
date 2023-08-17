@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com JS - I</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="idNumber1">Informe o primeiro número:</label>
+            <input type="number" name="number1" id="idNumber1" min="0" max="50" required
+            oninput="idAdd.innerHTML = Number(idNumber1.value) + Number(idNumber2.value) + Number(idNumber3.value)">
+        </div>
+        <div>
+            <label for="idNumber2">Informe o segundo número:</label>
+            <input type="number" name="number2" id="idNumber2" min="0" max="50" required
+            oninput="idAdd.innerHTML = Number(idNumber1.value) + Number(idNumber2.value) + Number(idNumber3.value)">
+        </div>
+        <div>
+            <label for="idNumber3">Informe o terceiro número:</label>
+            <input type="number" name="number3" id="idNumber3" min="0" max="50" required
+            oninput="idAdd.innerHTML = Number(idNumber1.value) + Number(idNumber2.value) + Number(idNumber3.value)">
+        </div>
+        <div>
+            <label for="idAdd">Soma:</label>
+            <output name="toAdd" id="idAdd">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+        </div>
+    </form>
+</body>
+</html>
