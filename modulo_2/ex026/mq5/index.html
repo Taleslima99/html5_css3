@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Media Queries</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="idBurger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="idItems">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testado Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates delectus, velit dolorem sed, voluptate perferendis enim, ullam mollitia corrupti ducimus pariatur. Id deleniti, veritatis ea corporis laudantium modi accusantium minima itaque commodi deserunt consectetur incidunt sit nemo voluptatem consequuntur rem alias? Reiciendis laudantium aut ducimus mollitia similique quibusdam <strong>eius voluptate assumenda quo beatae</strong> nobis voluptas animi unde non in magni ad cupiditate recusandae ea alias tempora vel, deleniti repellendus perferendis? Iusto autem aperiam nesciunt culpa ex soluta sint, vitae ut, eos eaque aspernatur excepturi reiciendis rerum omnis ipsum quidem voluptatum. Ipsam fugit suscipit quae itaque aperiam consequuntur cumque delectus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem quas assumenda, laudantium cupiditate reiciendis ab! Voluptatibus optio fugit doloremque sit nisi? Qui sint illum eum quae, magnam incidunt hic inventore, laudantium deleniti labore, impedit nam culpa in dicta maiores obcaecati temporibus error itaque cupiditate corporis alias! Et quos labore quisquam laboriosam distinctio. <strong>Voluptate enim, quas cumque suscipit est dicta soluta recusandae</strong> fugiat dolor corporis ratione delectus vero culpa autem ex harum aspernatur similique officia deleniti ut magni iusto. Obcaecati dolorum quaerat ex dolor consequatur nobis sed qui, sint ullam, iusto laboriosam blanditiis. Deserunt magni doloribus ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis saepe magnam dolorum temporibus minima porro doloribus ex laboriosam earum labore explicabo possimus quaerat cumque rem repudiandae distinctio, tenetur provident minus. Praesentium natus quis, enim quia quo, cupiditate maiores aspernatur possimus quibusdam cumque officiis. Voluptas reprehenderit sunt odit nihil libero? Quod nesciunt ad facere et maxime, ex iure pariatur consectetur beatae suscipit alias blanditiis ipsam, culpa itaque illum officiis nisi veniam quas totam voluptate. In tenetur aspernatur qui saepe mollitia laboriosam distinctio hic culpa sed eius, repellendus illo iste dolorum ea sunt vero a quae laudantium optio similique eveniet unde impedit! Accusamus consequatur veniam beatae consectetur, sunt quisquam adipisci possimus iure perferendis deserunt pariatur veritatis nemo, dolorum vel alias labore in ea odit saepe. Iste nihil mollitia possimus provident? Quas inventore voluptatem facere velit aut libero, ad explicabo iusto corrupti! Voluptatibus odit magni iure harum numquam reiciendis nostrum cumque blanditiis quae? Cum voluptas consequuntur voluptatibus ab. Porro iste, perferendis minima, quaerat quis delectus repudiandae maiores sapiente ab cumque temporibus ipsum, ex totam officia quod! Debitis, aperiam deserunt accusantium cum commodi perspiciatis assumenda tenetur odio qui sapiente in laboriosam vitae rem esse neque magni eius consequatur. Cupiditate voluptate aut explicabo illum odit?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (idItems.style.display == 'block') {
+                idItems.style.display = 'none';
+            } else {
+                idItems.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

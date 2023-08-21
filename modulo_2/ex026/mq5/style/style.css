@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #c6c5b9;
+}
+
+header {
+    background-color: #587792;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    color: #171f25;
+}
+
+span#idBurger {
+    background-color: #231b2c;
+    color: #fdfdff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+span#idBurger:hover {
+    background-color: #1b1421;
+    color: #fdfdff;
+    transition: .7s;
+    cursor: pointer;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2f243a;
+    color: #fdfdff;
+    border-top: 1px solid #fdfdff;
+}
+
+menu > ul > li > a:hover {
+    background-color: #1b1421;
+    transition: .7s;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-top: 1px;
+    margin-bottom: 50px;
+    background-color: #fdfdff;
+}
+
+article > h2 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+article > p {
+    text-indent: 35px;
+    text-align: justify;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*DEMAIS MÍDIAS*/
+
+/*
+TYPICAL DEVICE BREAKPOINTS
+---------------------------------------------------------
+-PEQUENAS TELAS: até (max-width: 600px);
+-CELULARES: min-width: 600px até max-width: 768px;
+****neste caso, já foram feitas no outro arquivo css****
+---------------------------------------------------------
+-TABLETS: min-width:768px até max-width: 992px;
+-DESKTOPS: min-width:992px até max-width:1200px;
+-GRANDES TELAS: min-width: 1200px (até mais pixels).
+*/
+
+@media print { /*impressão*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url('../imagens/back-print.jpg'); /*desnecessário, pois não imprimirá o fundo*/
+    }
+
+    main {
+        width: 90%;
+        border: 1px solid #000;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: #000;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration:overline;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*pc*/
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /*tv*/
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main {
+        width: 90%;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}
