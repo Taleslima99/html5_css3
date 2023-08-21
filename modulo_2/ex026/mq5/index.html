@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaquery.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Meu Site</h1>
         <span id="idBurger" class="material-icons" onclick="clickMenu()">menu</span>
@@ -30,6 +31,14 @@
         </article>
     </main>
     <script>
+        function changeSize() {
+            if (window.innerWidth >= 768) {
+                idItems.style.display = 'block';
+            } else {
+                idItems.style.display = 'none';
+            }
+        }
+
         function clickMenu() {
             if (idItems.style.display == 'block') {
                 idItems.style.display = 'none';
@@ -39,4 +48,4 @@
         }
     </script>
 </body>
-</html>
+</html

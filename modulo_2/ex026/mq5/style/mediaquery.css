@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*
+typical device breakpoints
+pequenas telas: até 600px;
+celular: de 600px até 768px;
+----- já feito no mobile first -----
+tablet: de 768px até 992px;
+desktop: 992px até 1200px;
+grandes telas: acima de 1200px.
+*/
+
+@media screen and (min-width: 768px) {
+    span#idBurger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        border: none;
+        border-radius: 2px;
+        margin-left: 3px;
+    }
+
+    main {
+        width: 768px;
+    }
+}
